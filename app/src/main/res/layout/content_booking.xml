@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_cinema"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/cinema"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".BookingActivity"
+        tools:showIn="@layout/activity_booking">
+
+        <LinearLayout
+            android:id="@+id/date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/transparent">
+
+            <Button
+                android:id="@+id/btn_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/colorPrimary"
+                android:padding="8dp"
+                android:text="PICK A DATE"
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/sp_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/darker_gray"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/screen_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="SCREEN"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TableRow
+            android:id="@+id/seat_row_a"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:tag="1"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/row_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:text="A" />
+
+            <ImageButton
+                android:id="@+id/a_seat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="1"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/a_seat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="8dp"
+                android:tag="2"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/a_seat3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="3"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/a_seat4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="4"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/a_seat5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="5"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/a_seat6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="6"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/a_seat7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="7"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="7"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/a_seat8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="8"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="8"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/a_seat9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="9"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="9"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/a_seat10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="10"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/a_seat11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="11"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="8dp"
+                android:tag="11"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/a_seat12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="12"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="12"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/a_seat13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="13"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="13"
+                app:srcCompat="@drawable/seat_green" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/seat_row_b"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:tag="2"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/row_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:text="B" />
+
+            <ImageButton
+                android:id="@+id/b_seat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="1"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/b_seat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="8dp"
+                android:tag="2"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/b_seat3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="3"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/b_seat4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="4"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/b_seat5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="5"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/b_seat6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="6"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/b_seat7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="7"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="7"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/b_seat8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="8"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="8"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/b_seat9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="9"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="9"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/b_seat10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="10"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/b_seat11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="11"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="8dp"
+                android:tag="11"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/b_seat12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="12"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="12"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/b_seat13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="13"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="13"
+                app:srcCompat="@drawable/seat_green" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/seat_row_c"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:tag="3"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/row_C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:text="C" />
+
+            <ImageButton
+                android:id="@+id/c_seat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="1"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/c_seat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="8dp"
+                android:tag="2"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/c_seat3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="3"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/c_seat4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="4"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/c_seat5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="5"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/c_seat6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="6"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/c_seat7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="7"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="7"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/c_seat8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="8"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="8"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/c_seat9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="9"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="9"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/c_seat10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="10"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/c_seat11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="11"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="8dp"
+                android:tag="11"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/c_seat12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="12"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="12"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/c_seat13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="13"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="13"
+                app:srcCompat="@drawable/seat_green" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/seat_row_d"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:tag="4"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/row_D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:text="D" />
+
+            <ImageButton
+                android:id="@+id/d_seat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="1"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/d_seat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="8dp"
+                android:tag="2"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/d_seat3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="3"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/d_seat4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="4"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/d_seat5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="5"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/d_seat6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="6"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/d_seat7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="7"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="7"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/d_seat8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="8"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="8"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/d_seat9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="9"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="9"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/d_seat10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="10"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/d_seat11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="11"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="8dp"
+                android:tag="11"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/d_seat12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="12"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="12"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/d_seat13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="13"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="13"
+                app:srcCompat="@drawable/seat_green" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/seat_row_e"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:tag="5"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/row_E"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:text="E" />
+
+            <ImageButton
+                android:id="@+id/e_seat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="1"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/e_seat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="8dp"
+                android:tag="2"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/e_seat3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="3"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/e_seat4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="4"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/e_seat5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="5"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/e_seat6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="6"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/e_seat7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="7"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="7"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/e_seat8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="8"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="8"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/e_seat9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="9"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="9"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/e_seat10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="10"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/e_seat11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="11"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="8dp"
+                android:tag="11"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/e_seat12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="12"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="12"
+                app:srcCompat="@drawable/seat_green" />
+
+            <ImageButton
+                android:id="@+id/e_seat13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="13"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="seat_onClick"
+                android:padding="8dp"
+                android:tag="13"
+                app:srcCompat="@drawable/seat_green" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingBottom="100dp"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/column_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/column_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="32dp"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/column_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/column_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/column_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/column_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="6"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/column_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="7"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/column_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="8"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/column_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="9"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/column_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="10"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10" />
+
+            <TextView
+                android:id="@+id/column_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="11"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="32dp"
+                android:text="11" />
+
+            <TextView
+                android:id="@+id/column_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="12"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12" />
+
+            <TextView
+                android:id="@+id/column_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="13"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="13" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

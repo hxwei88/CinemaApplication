@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "620395647316",
+    "firebase_url": "https://cinemaapplication-9dea5.firebaseio.com",
+    "project_id": "cinemaapplication-9dea5",
+    "storage_bucket": "cinemaapplication-9dea5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620395647316:android:37601663913860405bb8c1",
+        "android_client_info": {
+          "package_name": "com.example.cinemaapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620395647316-kvi2s38r9jg31ckf1q1lgktcntafkq44.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cinemaapplication",
+            "certificate_hash": "07bdb4437b6c0f29b877605d80d6d90ddb621017"
+          }
+        },
+        {
+          "client_id": "620395647316-amee2n3t6tqd0sdu04m50kjrsiar3bje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiv_ddlEpJi1aLZF4xQv6FUzzk8o7Dxjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620395647316-amee2n3t6tqd0sdu04m50kjrsiar3bje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
